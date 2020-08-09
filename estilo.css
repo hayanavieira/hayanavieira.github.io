@@ -1,0 +1,259 @@
+html, body{
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+header .menu {
+float: right;
+list-style: none;
+}
+header .menu li a {
+text-decoration: initial;
+color: white;
+}
+header {
+    width: 100%;
+    background-color: black;
+    height: 80px;
+    position: fixed;
+    z-index: 10;
+}
+#logo {
+    width: 80px;
+    float: left;
+    position: absolute;
+    top: 10px;
+    margin-left: 3%;
+}
+#menu {
+    margin-right: 3%;
+    display: block;
+}
+header ul li {
+    float: left;
+    list-style: none;
+    padding: 15 15 10 15;
+}
+header ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 7px 10px 7px;
+}
+header ul li a:hover {
+    background-color: rgb(197, 25, 45, 0.6);
+    border-radius: 4px;
+    color: black;
+}
+#capa {
+    background-image: url("img/est.jpg");
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+#subcapa {
+    background-color: rgb(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+#titulo {
+    padding-top: 20%;
+    font-size: 50px;
+}
+#botao {
+    color: white;
+    border: 1px white solid;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+#botao:hover {
+    background-color: white;
+    color: black;
+}
+section {
+    float: left;
+    padding: 45px 25px 45px 25px;
+}
+.coluna {
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    width: 40%;
+}
+.cols {
+    float: left;
+    width: 29%;
+    padding: 0 2%;
+}
+#mapa {
+    padding-left: 32%;
+}
+.divisao {   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.25rem 0px 1.5rem;
+}
+.esquerda {
+    margin-right: 1rem;
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: #c5192d;
+    border-radius: 1rem;
+    border-color: #c5192d !important;
+}
+.direita {
+    margin-left: 1rem;
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: #c5192d;
+    border-radius: 1rem;
+    border-color: #c5192d !important;
+}
+.icon {
+    width: 51px;
+}
+#ods4, #projeto, #sobre {
+    background-color: #f7f7f7;
+}
+.colunas {
+    float: left;
+    padding: 0 5%;
+    width: 20%;
+}
+#leitura {
+    width: 100%;
+    padding: 0 0 0 0;
+}
+.colunaLei, .colunaLeiDif {
+    float: left;
+    height: 500px;
+}
+.colunaLei {
+    width: 28%;
+    background-size: cover;
+}
+.colunaLeiDif {
+    width: 44%;
+    padding-top: 50px;
+}
+#colUm {
+    background-image: url("img/bookDir.png");
+}
+#colTres {
+    background-image: url("img/bookEsq.png");
+    float: right;
+}
+#projeto {
+    padding: 25px 5%;
+}
+#local p {
+    padding: 0 5%;
+}
+.justificado {
+    text-align: justify;
+}
+.centralizado{
+    text-align: center;
+}
+#local, #sobre{
+    float: left;
+}
+#navegacao ul li{
+    list-style: none;
+    margin: 16px 0;
+}
+#navegacao ul {
+    padding-inline-start: 0px;
+}
+#navegacao ul li a {
+    text-decoration: none;
+    color: black;
+}
+#navegacao ul li a:hover {
+    color: #c5192d;
+}
+.rod {
+    float: left;
+    width: 12.5%;
+    padding: 2%;
+}
+#im {
+    width: 90%;
+}
+#copy {
+    width: 100%;
+    float: left;
+    background-color: #dedede;
+}
+.logo{
+    float: left;
+    padding: 10px; 
+}
+.proj {
+    padding: 0 0 0 41%;
+}
+.logo:hover {
+    background-color: rgb(197, 25, 45, 0.6);
+    border-radius: 100%;
+}
+#video {
+    padding-top: 8%;
+}
+.espaco {
+    line-height: 23px;
+}
+@media all and (max-width: 768px) {
+    .menu {
+        visibility: hidden;
+    }
+    .coluna, .cols, .rod {
+        display: block;
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+    }
+    .colunaLei {
+        width: 0px;
+    }
+    header #logoP {
+        position: relative;
+        width: 100%;
+        margin-left: 0px;
+        text-align: center;
+    }
+    #mapa {
+        width: 90%;
+        padding-left: 5%;
+    }
+    #logo{
+        margin-left: 0px;
+        transform: translate(-50%);
+    }
+    #titulo {
+        padding-top: 50%;
+    }
+    .colunaLeiDif{
+        padding-left: 15%;
+        width: 70%;
+        padding-bottom: 220px;
+    }
+    #projeto p {
+        width: 80%;
+        padding-left: 10%;
+    }
+    .rod {
+        text-align: center;
+    }
+    .logo {
+        transform: translate(120%);
+    }
+    #im {
+        width: 55%;
+        padding-top: 30px;
+    }
+}
